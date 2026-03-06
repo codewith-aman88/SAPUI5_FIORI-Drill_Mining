@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.capgemini.z3698miningjson.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List id="_IDGenList1" items="{minerals>/Locations}">
+                <items>
+                    <StandardListItem id="_IDGenStandardListItem1"
+                    title="{minerals>LocationName}"
+                    description="{minerals>Region}"
+                    type="Active"
+                    press=".onListItemPress"/>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,55 @@
+{
+  "Locations": [
+    {
+      "LocationID": "LOC001",
+      "LocationName": "Kurnool Site",
+      "Region": "Andhra Pradesh",
+      "Drills": [
+        {
+          "DrillID": "DL-10001",
+          "DrillDate": "2025-05-10",
+          "Resources": ["Core Drill Rig", "Geologist Team"],
+          "CostAmount": 185000,
+          "Currency": "INR",
+          "ManDays": 6.5,
+          "ManDaysUnit": "DAY",
+          "ProbabilityPct": 78.5
+        }
+      ]
+    },
+    {
+      "LocationID": "LOC002",
+      "LocationName": "Bellary Range",
+      "Region": "Karnataka",
+      "Drills": [
+        {
+          "DrillID": "DL-20001",
+          "DrillDate": "2025-04-18",
+          "Resources": ["Excavator", "Survey Drone"],
+          "CostAmount": 120000,
+          "Currency": "INR",
+          "ManDays": 5,
+          "ManDaysUnit": "DAY",
+          "ProbabilityPct": 72
+        }
+      ]
+    },
+    {
+      "LocationID": "LOC003",
+      "LocationName": "Singareni Block",
+      "Region": "Telangana",
+      "Drills": [
+        {
+          "DrillID": "DL-30001",
+          "DrillDate": "2025-03-30",
+          "Resources": ["Seismic Logger", "Ventilation Blower"],
+          "CostAmount": 142000,
+          "Currency": "INR",
+          "ManDays": 7,
+          "ManDaysUnit": "DAY",
+          "ProbabilityPct": 81
+        }
+      ]
+    }
+  ]
+}
