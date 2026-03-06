@@ -147,42 +147,6 @@ This allows the application to support **multiple languages** in the future.
 
 ---
 
-# ⚙️ Installation & Run
-
-## 1️⃣ Clone the Repository
-
-```bash id="8nfikv"
-git clone https://github.com/codewith-aman88/SAPUI5_FIORI-Drill_Mining.git
-```
-
----
-
-## 2️⃣ Navigate to the Project
-
-```bash id="4kw02p"
-cd SAPUI5_FIORI-Drill_Mining
-```
-
----
-
-## 3️⃣ Install Dependencies
-
-```bash id="nj0yxf"
-npm install
-```
-
----
-
-## 4️⃣ Run the Application
-
-```bash id="o1v3nf"
-ui5 serve -o index.html
-```
-
-This will start the UI5 development server and open the application in your browser.
-
----
-
 # 📚 Learning Objectives
 
 This project demonstrates:
