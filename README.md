@@ -1,36 +1,207 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Fri Sep 12 2025 15:12:54 GMT+0530 (India Standard Time)|
-|**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.18.6|
-|**Generation Platform**<br>Visual Studio Code|
-|**Template Used**<br>Basic|
-|**Service Type**<br>None|
-|**Service URL**<br>N/A|
-|**Module Name**<br>z_3698_mining_json|
-|**Application Title**<br>mining_json|
-|**Namespace**<br>com.capgemini|
-|**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.140.0|
-|**Enable Code Assist Libraries**<br>False|
-|**Enable TypeScript**<br>False|
-|**Add Eslint configuration**<br>False|
+# ⛏️ SAPUI5 Fiori Drill Mining Application
 
-## z_3698_mining_json
+A **SAPUI5 Fiori-style web application** that displays mineral drilling data and allows users to explore detailed information about mining resources.
 
-An SAP Fiori application.
+This project demonstrates how to build an **enterprise-style SAPUI5 application using the MVC architecture, JSON models, routing, and XML views**.
 
-### Starting the generated app
+The application loads mineral data from a **JSON model** and displays it in a list where users can navigate to a **details page** for more information.
 
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  To launch the generated application, run the following from the generated application root folder:
+---
 
+# 🚀 Features
+
+* View mineral drilling data
+* Navigate to detailed mineral information
+* SAPUI5 **MVC architecture**
+* JSON Model data binding
+* Routing and navigation between views
+* SAP Fiori styled UI
+* Modular project structure
+
+---
+
+# 🏗️ Project Structure
+
+```id="viyelv"
+SAPUI5_FIORI-Drill_Mining
+│
+├── node_modules
+│
+├── webapp
+│   │
+│   ├── controller
+│   │   ├── App.controller.js
+│   │   ├── View1.controller.js
+│   │   └── Details.controller.js
+│   │
+│   ├── view
+│   │   ├── App.view.xml
+│   │   ├── View1.view.xml
+│   │   └── Details.view.xml
+│   │
+│   ├── model
+│   │   ├── minerals.json
+│   │   └── models.js
+│   │
+│   ├── css
+│   │
+│   ├── i18n
+│   │   └── i18n.properties
+│   │
+│   ├── Component.js
+│   ├── index.html
+│   └── manifest.json
+│
+├── test
+├── package.json
+├── package-lock.json
+├── ui5.yaml
+├── ui5-local.yaml
+├── .gitignore
+└── README.md
 ```
-    npm start
+
+---
+
+# 📱 Application Pages
+
+## 🏠 Minerals List Page (View1)
+
+Displays a list of available minerals and drilling data loaded from the JSON model.
+
+Users can:
+
+* View mineral information
+* Select a mineral record
+* Navigate to the details page
+
+---
+
+## 📄 Mineral Details Page
+
+Shows detailed information for the selected mineral such as:
+
+* Mineral Name
+* Location
+* Depth
+* Mining data
+* Additional details
+
+---
+
+# 📊 Data Model
+
+The application uses a **JSON model** to store mineral data.
+
+Location:
+
+```id="tkrqif"
+webapp/model/minerals.json
 ```
 
-#### Pre-requisites:
+Example structure:
 
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
+```json id="de6vpt"
+{
+  "minerals": [
+    {
+      "id": "1",
+      "name": "Gold",
+      "location": "South Africa",
+      "depth": "3500m"
+    }
+  ]
+}
+```
 
+The model is configured in:
 
+```id="h77j0b"
+webapp/model/models.js
+```
+
+---
+
+# 🌍 Internationalization
+
+Text labels and UI strings are maintained using the **i18n properties file**.
+
+```id="xxm9o3"
+webapp/i18n/i18n.properties
+```
+
+This allows the application to support **multiple languages** in the future.
+
+---
+
+# 🧰 Technologies Used
+
+* SAPUI5
+* JavaScript
+* XML Views
+* JSON Model
+* HTML5
+* CSS
+* SAP Fiori Design Principles
+* UI5 Tooling
+
+---
+
+# ⚙️ Installation & Run
+
+## 1️⃣ Clone the Repository
+
+```bash id="8nfikv"
+git clone https://github.com/codewith-aman88/SAPUI5_FIORI-Drill_Mining.git
+```
+
+---
+
+## 2️⃣ Navigate to the Project
+
+```bash id="4kw02p"
+cd SAPUI5_FIORI-Drill_Mining
+```
+
+---
+
+## 3️⃣ Install Dependencies
+
+```bash id="nj0yxf"
+npm install
+```
+
+---
+
+## 4️⃣ Run the Application
+
+```bash id="o1v3nf"
+ui5 serve -o index.html
+```
+
+This will start the UI5 development server and open the application in your browser.
+
+---
+
+# 📚 Learning Objectives
+
+This project demonstrates:
+
+* SAPUI5 MVC architecture
+* JSON Model data binding
+* Routing and navigation
+* Building SAP Fiori style UI
+* Structuring SAPUI5 applications
+* UI5 Tooling setup
+
+---
+
+# 🔮 Future Improvements
+
+* Add search and filter functionality
+* Add charts for mineral statistics
+* Integrate with **OData service**
+* Improve UI using **Fiori design components**
+* Add dashboard analytics for mining data
+
+---
